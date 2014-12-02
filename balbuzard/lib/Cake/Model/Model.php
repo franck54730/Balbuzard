@@ -3315,10 +3315,9 @@ class Model extends Object implements CakeEventListener {
 		}
 		if (!is_array($fields)) {
 			$fields = func_get_args();
-			$fieldCount = count($fields) - 1;
-			if (is_bool($fields[$fieldCount])) {
-				$or = $fields[$fieldCount];
-				unset($fields[$fieldCount]);
+			if (is_bool($fields[count($fields) - 1])) {
+				$or = $fields[count($fields) - 1];
+				unset($fields[count($fields) - 1]);
 			}
 		}
 

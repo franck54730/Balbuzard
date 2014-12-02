@@ -148,8 +148,6 @@ App::uses('Cache', 'Cache');
 App::uses('Object', 'Core');
 App::uses('Multibyte', 'I18n');
 
-App::$bootstrapping = true;
-
 /**
  * Full URL prefix
  */
@@ -171,6 +169,8 @@ if (!defined('FULL_BASE_URL')) {
 Configure::write('App.imageBaseUrl', IMAGES_URL);
 Configure::write('App.cssBaseUrl', CSS_URL);
 Configure::write('App.jsBaseUrl', JS_URL);
+
+App::$bootstrapping = true;
 
 Configure::bootstrap(isset($boot) ? $boot : true);
 

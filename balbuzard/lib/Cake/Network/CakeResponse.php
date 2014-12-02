@@ -1507,9 +1507,7 @@ class CakeResponse {
 	protected function _flushBuffer() {
 		//@codingStandardsIgnoreStart
 		@flush();
-		if (ob_get_level()) {
-			@ob_flush();
-		}
+		@ob_flush();
 		//@codingStandardsIgnoreEnd
 	}
 

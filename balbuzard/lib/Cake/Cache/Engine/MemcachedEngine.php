@@ -104,11 +104,7 @@ class MemcachedEngine extends CacheEngine {
 			return true;
 		}
 
-		if (!$this->settings['persistent']) {
-			$this->_Memcached = new Memcached();
-		} else {
-			$this->_Memcached = new Memcached((string)$this->settings['persistent']);
-		}
+		$this->_Memcached = new Memcached($this->settings['persistent'] ? (string)$this->settings['persistent'] : null);
 		$this->_setOptions();
 
 		if (count($this->_Memcached->getServerList())) {
