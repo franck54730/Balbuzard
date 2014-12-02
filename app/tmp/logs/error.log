@@ -561,3 +561,65 @@ Stack Trace:
 #0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /var/www/index.php(41): require('/var/www/app/we...')
 #2 {main}
+2014-12-02 14:22:58 Error: [MissingControllerException] Controller class BalbuzardController could not be found.
+Exception Attributes: array (
+  'class' => 'BalbuzardController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/balbuzard/index.php/Users
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 14:26:37 Error: Fatal Error (1): Call to undefined method View::_introspectModel() in [/var/www/lib/Cake/View/Helper/FormHelper.php, line 354]
+2014-12-02 14:26:37 Error: [FatalErrorException] Call to undefined method View::_introspectModel()
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/lib/Ca...', 354)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/lib/Ca...', 354, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/lib/Ca...', 354, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 14:33:54 Error: [MissingActionException] Action UsersController::connexion7() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'connexion7',
+)
+Request URL: /index.php/Users/connexion7
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-02 14:38:32 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/app/View/Users/connexion.ctp, line 4]
+2014-12-02 14:38:32 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/app/Vi...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/app/Vi...', 4, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/app/Vi...', 4, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 14:44:41 Error: [MissingControllerException] Controller class ConnexionController could not be found.
+Exception Attributes: array (
+  'class' => 'ConnexionController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/connexion
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 14:44:49 Error: Fatal Error (1): Call to undefined function printr() in [/var/www/app/Controller/UsersController.php, line 11]
+2014-12-02 14:44:49 Error: [FatalErrorException] Call to undefined function printr()
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/app/Co...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/app/Co...', 11, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/app/Co...', 11, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
