@@ -521,3 +521,43 @@ Stack Trace:
 #0 C:\wamp\www\balbuzard\balbuzard\balbuzard\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 C:\wamp\www\balbuzard\balbuzard\balbuzard\index.php(41): require('C:\\wamp\\www\\bal...')
 #2 {main}
+2014-12-02 13:40:11 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/cakephp/
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 13:40:11 Error: [MissingControllerException] Controller class BalbuzardController could not be found.
+Exception Attributes: array (
+  'class' => 'BalbuzardController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/balbuzard/index.php/Users
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 13:40:11 Error: [MissingControllerException] Controller class BalbuzardController could not be found.
+Exception Attributes: array (
+  'class' => 'BalbuzardController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/balbuzard/index.php/Posts/index
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 13:40:12 Error: [MissingControllerException] Controller class BalbuzardController could not be found.
+Exception Attributes: array (
+  'class' => 'BalbuzardController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/Balbuzard/
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}

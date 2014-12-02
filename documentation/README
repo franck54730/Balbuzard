@@ -5,3 +5,18 @@
 Configure::write('debug', 2); afficher tout (php et sql)
 Configure::write('debug', 1); afficher erreur php
 Configure::write('debug', 0); afficher rien
+
+// pour config son environnement sous linux
+
+//entrer ces ligne pour installer apache/php5/mysql
+
+sudo apt-get install apache2
+sudo apt-get install php5
+sudo apt-get install mysql-server
+sudo apt-get install php5-mysql
+
+//ensuite faire un clone 
+
+cd /var/www
+git clone https://github.com/Franck54730/Balbuzard.git .
+
