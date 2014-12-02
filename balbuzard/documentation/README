@@ -1,0 +1,7 @@
+//pour utiliser cake il faut activer PDO pour la connexion Mysql
+
+//pour afficher/cacher les erreurs dans app/Config/core.php 
+
+Configure::write('debug', 2); afficher tout (php et sql)
+Configure::write('debug', 1); afficher erreur php
+Configure::write('debug', 0); afficher rien

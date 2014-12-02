@@ -1,0 +1,19 @@
+<?php
+class PostsController extends AppController {
+    public $helpers = array('Html', 'Form');
+
+    public function index() {
+	$hostname = "localhost";
+	$username = "root";
+	$password = "root";
+
+	try {
+	  $db = new PDO("mysql:host=localhost;dbname=post","root", "root");
+	  echo "Connected to database";
+	}
+	catch(PDOException $e) {
+	  echo $e->getMessage();
+	}
+        $this->set('posts', $this->Post->find('all'));
+    }
+}
