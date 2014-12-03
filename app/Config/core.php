@@ -32,6 +32,10 @@
  * In development mode, you need to click the flash message to continue.
  */
 	Configure::write('debug', 2);
+	
+	Configure::write('STATUS_WAITING', 0);
+	Configure::write('STATUS_PLAY', 1);
+	Configure::write('STATUS_FINISH', 2);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
