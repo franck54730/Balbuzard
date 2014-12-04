@@ -19,7 +19,7 @@ class GamesController extends AppController {
 			$games = array();
 			foreach($all as $game){
 				$game = $game['Game'];
-				if($game['status']==Configure::read('STATUS_WAITING'))
+				if($game['status']==Configure::read('STATUS_WAITING') && $game['nbJoueur'] < $game['nbJoueurMax'])
 					$games[] = $game;
 			}
 			$this->set(array('games'=>$games));
@@ -39,7 +39,7 @@ class GamesController extends AppController {
 									"nom"=>$this->data['Game']['nom'], 
 									"nbJoueurMax"=>$this->data['Game']['nbJoueurMax'],
 									"status"=>Configure::read('STATUS_WAITING'),
-									"nbJoueur"=>1));
+									"nbJoueur"=>0));
 			$this->Game->save();
 			$id_game= count($this->Game->find('all'));
 			
@@ -59,6 +59,10 @@ class GamesController extends AppController {
 			$this->loadModel('User');
 			$users = array();
 			$game = $this->Game->findById($id);
+			//si la partie est commencer on commence a jouer
+			if($game['Game']["status"]==Configure::read('STATUS_PLAY')){
+				$this->redirect(array('controller' => 'games','action' => 'game', $id));
+			}
 			$allLobby = $this->Lobby->find('all');
 			
 			//sera a vrai si le joueur est deja dans la partie sinon on l'ajoute
@@ -72,10 +76,16 @@ class GamesController extends AppController {
 					$users[] = $user['User'];
 				}
 			}
+			$this->Game->id = $id;
+			//si il ya le nombre max de joueur la partie commence
+			if($game['Game']['nbJoueur']+1 == $game['Game']['nbJoueurMax']){
+				$this->Game->saveField("status",Configure::read('STATUS_PLAY'));
+			}
 			if(!$alreadyPlay){//alors on l'ajoute a la partie
 				$this->Lobby->set(array('id_user'=>$this->Session->read("User.id"),
 									'id_game'=>$id));
 				$this->Lobby->save();
+				$this->Game->saveField("nbJoueur",$game['Game']['nbJoueur']+1);
 				$users[] = $this->Session->read("User");
 			}
 			$this->set(array('users'=>$users, 'game'=>$game['Game']));
@@ -86,6 +96,10 @@ class GamesController extends AppController {
 		}
 	}
 	
-	public function game(){
+	public function game($id_game){
+		//distribuer les cartes (attention bien verifier que ca na pas deja été fait. cette fonction
+		//va etre appeler autant de fois qu'il y a de joueur il faut donc tester si le jeu n'a pas 
+		//deja distribuer, en verifiant dans la bdd si il y a deja des tuplus existant pour cette 
+		//game dans la table deck (il faudra passer par stack))
 	}
 }

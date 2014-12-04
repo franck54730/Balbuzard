@@ -623,3 +623,569 @@ Stack Trace:
 #3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-02 15:04:06 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /index.php/users/view/1
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-02 15:28:54 Error: Fatal Error (1): Class 'text' not found in [/var/www/app/Controller/UsersController.php, line 25]
+2014-12-02 15:28:54 Error: [FatalErrorException] Class 'text' not found
+Request URL: /index.php/users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'text' no...', '/var/www/app/Co...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'text' no...', '/var/www/app/Co...', 25, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'text' no...', '/var/www/app/Co...', 25, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 15:29:35 Error: Fatal Error (1): Class 'Text' not found in [/var/www/app/Controller/UsersController.php, line 25]
+2014-12-02 15:29:35 Error: [FatalErrorException] Class 'Text' not found
+Request URL: /index.php/users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Text' no...', '/var/www/app/Co...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Text' no...', '/var/www/app/Co...', 25, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Text' no...', '/var/www/app/Co...', 25, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 15:41:04 Error: [MissingControllerException] Controller class ConnectionController could not be found.
+Exception Attributes: array (
+  'class' => 'ConnectionController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/connection
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-02 15:41:09 Error: [MissingControllerException] Controller class ConnexionController could not be found.
+Exception Attributes: array (
+  'class' => 'ConnexionController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/connexion
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-03 14:27:50 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/cakephp/
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-03 14:44:04 Error: [MissingViewException] View file "/var/www/app/View/Games/lobby.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/app/View/Games/lobby.ctp',
+)
+Request URL: /index.php/games/lobby
+Stack Trace:
+#0 /var/www/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#4 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(41): require('/var/www/app/we...')
+#6 {main}
+2014-12-03 14:47:50 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/app/View/Games/lobby.ctp, line 3]
+2014-12-03 14:47:50 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/games/lobby
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/app/Vi...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/app/Vi...', 3, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/app/Vi...', 3, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-03 14:48:06 Error: [MissingActionException] Action GamesController::create() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => 'create',
+)
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-03 14:48:08 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/favicon.ico
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-03 14:56:59 Error: [MissingActionException] Action GamesController::create() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => 'create',
+)
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-03 15:05:53 Error: Fatal Error (1): Class 'Constantes' not found in [/var/www/app/Controller/GamesController.php, line 18]
+2014-12-03 15:05:53 Error: [FatalErrorException] Class 'Constantes' not found
+Request URL: /index.php/games/lobby
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Constant...', '/var/www/app/Co...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Constant...', '/var/www/app/Co...', 18, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Constant...', '/var/www/app/Co...', 18, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-03 15:32:54 Error: [MissingActionException] Action GamesController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => 'view',
+)
+Request URL: /index.php/games/view/2
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-03 15:55:56 Error: [MissingViewException] View file "/var/www/app/View/Games/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/app/View/Games/view.ctp',
+)
+Request URL: /index.php/games/view/2
+Stack Trace:
+#0 /var/www/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#4 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(41): require('/var/www/app/we...')
+#6 {main}
+2014-12-03 16:02:12 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/app/Controller/GamesController.php, line 41]
+2014-12-03 16:02:12 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/app/Co...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/app/Co...', 41, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/app/Co...', 41, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-03 16:04:17 Error: [MissingTableException] Table lobbies for model Lobby was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'lobbies',
+  'class' => 'Lobby',
+  'ds' => 'default',
+)
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('lobbies')
+#1 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /var/www/lib/Cake/Model/Model.php(1234): Model->schema()
+#3 /var/www/lib/Cake/Model/Model.php(1193): Model->_setAliasData(Array)
+#4 /var/www/app/Controller/GamesController.php(44): Model->set(Array)
+#5 [internal function]: GamesController->create()
+#6 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#9 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/index.php(41): require('/var/www/app/we...')
+#11 {main}
+2014-12-03 16:04:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`balbuzard`.`lobbies`, CONSTRAINT `lobbies_ibfk_2` FOREIGN KEY (`id_game`) REFERENCES `games` (`id`))
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ba...', Array)
+#2 /var/www/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ba...')
+#3 /var/www/lib/Cake/Model/Model.php(1854): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/app/Controller/GamesController.php(45): Model->save()
+#5 [internal function]: GamesController->create()
+#6 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#9 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/index.php(41): require('/var/www/app/we...')
+#11 {main}
+2014-12-03 16:20:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`balbuzard`.`lobbies`, CONSTRAINT `lobbies_ibfk_2` FOREIGN KEY (`id_game`) REFERENCES `games` (`id`))
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ba...', Array)
+#2 /var/www/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ba...')
+#3 /var/www/lib/Cake/Model/Model.php(1854): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/app/Controller/GamesController.php(45): Model->save()
+#5 [internal function]: GamesController->create()
+#6 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#9 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/index.php(41): require('/var/www/app/we...')
+#11 {main}
+2014-12-03 16:23:18 Error: Fatal Error (4): syntax error, unexpected '$users' (T_VARIABLE) in [/var/www/app/View/Games/view.ctp, line 8]
+2014-12-03 16:23:18 Error: [FatalErrorException] syntax error, unexpected '$users' (T_VARIABLE)
+Request URL: /index.php/games/view/1
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/app/Vi...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/app/Vi...', 8, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/app/Vi...', 8, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:02:21 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/favicon.ico
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 16:12:33 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/app/Controller/GamesController.php, line 43]
+2014-12-04 16:12:33 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/app/Co...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/app/Co...', 43, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/app/Co...', 43, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:13:38 Error: [MissingControllerException] Controller class LobbiesController could not be found.
+Exception Attributes: array (
+  'class' => 'LobbiesController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/lobbies/create
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 16:13:44 Error: [MissingControllerException] Controller class LobbuController could not be found.
+Exception Attributes: array (
+  'class' => 'LobbuController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/lobbu/create
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 16:13:46 Error: [MissingControllerException] Controller class LobbyController could not be found.
+Exception Attributes: array (
+  'class' => 'LobbyController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/lobby/create
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 16:14:24 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/app/Controller/GamesController.php, line 43]
+2014-12-04 16:14:24 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /index.php/games/create
+Stack Trace:
+#0 /var/www/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/app/Co...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/app/Co...', 43, Array)
+#2 /var/www/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/app/Co...', 43, Array)
+#3 /var/www/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:28:05 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'balbuzard.games' doesn't exist
+Request URL: /index.php/games/view/4
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Game`.`...', Array)
+#2 /var/www/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Game`.`...', Array, Array)
+#3 /var/www/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Game`.`...', false)
+#4 /var/www/lib/Cake/Model/Model.php(2947): DboSource->read(Object(AppModel), Array)
+#5 /var/www/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#6 /var/www/lib/Cake/Model/Datasource/DboSource.php(597): Model->find('first', Array)
+#7 /var/www/lib/Cake/Model/Model.php(808): DboSource->query('findById', Array, Object(AppModel))
+#8 /var/www/app/Controller/GamesController.php(57): Model->__call('findById', Array)
+#9 /var/www/app/Controller/GamesController.php(57): AppModel->findById('4')
+#10 [internal function]: GamesController->view('4')
+#11 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#12 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#14 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/index.php(41): require('/var/www/app/we...')
+#16 {main}
+2014-12-04 16:29:49 Error: [MissingViewException] View file "/var/www/app/View/Games/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/app/View/Games/index.ctp',
+)
+Request URL: /index.php/games/
+Stack Trace:
+#0 /var/www/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#4 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(41): require('/var/www/app/we...')
+#6 {main}
+2014-12-04 17:16:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`balbuzard`.`lobbies`, CONSTRAINT `lobbies_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`))
+Request URL: /index.php/games/wait/2
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ba...', Array)
+#2 /var/www/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ba...')
+#3 /var/www/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Lobby), Array, Array)
+#4 /var/www/app/Controller/GamesController.php(78): Model->save()
+#5 [internal function]: GamesController->wait('2')
+#6 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#9 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/index.php(41): require('/var/www/app/we...')
+#11 {main}
+2014-12-04 17:16:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`balbuzard`.`lobbies`, CONSTRAINT `lobbies_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`))
+Request URL: /index.php/games/wait/2
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ba...', Array)
+#2 /var/www/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `ba...')
+#3 /var/www/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Lobby), Array, Array)
+#4 /var/www/app/Controller/GamesController.php(78): Model->save()
+#5 [internal function]: GamesController->wait('2')
+#6 /var/www/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#7 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#9 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/index.php(41): require('/var/www/app/we...')
+#11 {main}
+2014-12-04 17:31:00 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1044] Access denied for user \'damm\'@\'%\' to database \'damm\'',
+  'enabled' => true,
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#3 /var/www/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#5 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#6 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#10 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#11 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#12 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#14 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/index.php(41): require('/var/www/app/we...')
+#17 {main}
+2014-12-04 17:31:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'damm\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#3 /var/www/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#5 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#6 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#10 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#11 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#12 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#14 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/index.php(41): require('/var/www/app/we...')
+#17 {main}
+2014-12-04 17:31:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'damm\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#3 /var/www/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#5 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#6 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#10 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#11 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#12 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#14 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/index.php(41): require('/var/www/app/we...')
+#17 {main}
+2014-12-04 17:31:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'damm\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#3 /var/www/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#5 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#6 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#10 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#11 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#12 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#14 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/index.php(41): require('/var/www/app/we...')
+#17 {main}
+2014-12-04 17:31:50 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'damm\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/lib/Cake/Model/Model.php(3539): ConnectionManager::getDataSource('default')
+#3 /var/www/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#5 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#6 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#9 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#10 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#11 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#12 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#13 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#14 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/index.php(41): require('/var/www/app/we...')
+#17 {main}
+2014-12-04 17:36:12 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#1 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#5 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#6 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#7 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#8 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#9 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#10 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/index.php(41): require('/var/www/app/we...')
+#13 {main}
+2014-12-04 19:50:16 Error: [MissingActionException] Action GamesController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => 'view',
+)
+Request URL: /index.php/games/view/4
+Stack Trace:
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(41): require('/var/www/app/we...')
+#4 {main}
+2014-12-04 21:43:03 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /index.php/Users/connexion
+Stack Trace:
+#0 /var/www/lib/Cake/Model/Model.php(3566): Model->setSource('users')
+#1 /var/www/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /var/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/app/View/Users/connexion.ctp(4): FormHelper->create('User', Array)
+#5 /var/www/lib/Cake/View/View.php(948): include('/var/www/app/Vi...')
+#6 /var/www/lib/Cake/View/View.php(910): View->_evaluate('/var/www/app/Vi...', Array)
+#7 /var/www/lib/Cake/View/View.php(471): View->_render('/var/www/app/Vi...')
+#8 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#9 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#10 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/index.php(41): require('/var/www/app/we...')
+#13 {main}
+2014-12-04 21:48:00 Error: [MissingControllerException] Controller class BalbuzardController could not be found.
+Exception Attributes: array (
+  'class' => 'BalbuzardController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/balbuzard/index.php/Users
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 21:49:58 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/favicon.ico
+Stack Trace:
+#0 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/index.php(41): require('/var/www/app/we...')
+#2 {main}
+2014-12-04 22:06:10 Error: [MissingViewException] View file "/var/www/app/View/Games/game.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/app/View/Games/game.ctp',
+)
+Request URL: /index.php/games/game
+Stack Trace:
+#0 /var/www/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#4 /var/www/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(41): require('/var/www/app/we...')
+#6 {main}
