@@ -2,3 +2,7 @@
 .project
 .settings/
 .gitignore~
+app/.gitignore
+app/script_db_create.sql~
+app/script_db_insert.sql~
+app/tmp/*
