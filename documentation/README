@@ -20,3 +20,14 @@ sudo apt-get install php5-mysql
 cd /var/www
 git clone https://github.com/Franck54730/Balbuzard.git .
 
+connection serveur
+
+ssh -i php.pem ec2-user@54.93.207.145
+
+php.pem -> fichier fournis par le prof dans tes mails
+
+connection a la base 
+
+mysql -h  ursodbweb2.c03xuktbfczp.eu-central-1.rds.amazonaws.com -P 3306 -u "nom de famille mail" -p
+
+mdp = nom de famille
