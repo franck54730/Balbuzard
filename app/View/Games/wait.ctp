@@ -1,5 +1,8 @@
 <!-- File: /app/View/Games/lobby.ctp -->
+<!-- vue d'une partie  -->
+<META HTTP-EQUIV="Refresh" CONTENT="1" URL="http://localhost/index.php/games/view/4">
 <h1>Partie : <?php echo $game['nom']?></h1>
+<?php if($game['id_creator'] == $this->Session->read("User.id")) echo "créateur";?>
 <table>
 	<tr>
 		<th>Joueurs</th>

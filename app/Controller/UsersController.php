@@ -19,9 +19,9 @@ class UsersController extends AppController {
 			while(!$connect && $i < count($users)){
 				$user = $users[$i];
 				$userTab = $user["User"];
-				echo $userTab['login']." == ".$this->data['User']['login']." && ".$userTab['pwd']." == ".$this->data['User']['pwd'];
 				if($userTab['login'] == $this->data['User']['login'] && $userTab['pwd'] == $this->data['User']['pwd']){
-					$this->Session->write("User",$this->User->findById($userTab['id']));
+					$thisUser = $this->User->findById($userTab['id']);
+					$this->Session->write("User",$thisUser["User"]);
 					$connect = true;
 				}
 				$i++;

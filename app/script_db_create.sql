@@ -29,7 +29,9 @@ CREATE TABLE games (
 	nom VARCHAR(30),  
 	nbJoueur INT UNSIGNED DEFAULT 0,
 	nbJoueurMax INT UNSIGNED DEFAULT 4,
-	status INT
+	status INT,
+	id_creator INT UNSIGNED,
+	FOREIGN KEY (id_creator) REFERENCES users(id)
 );
 
 CREATE TABLE lobbies (     

@@ -10,7 +10,7 @@
 	<?php 
 		foreach($games as $game){
 			echo "<tr>";
-			echo "<td>".$game["nom"]."</td>";
+			echo "<td>".$this->Html->link($game["nom"], array('controller' => 'games', 'action' => 'wait', $game['id']))."</td>";
 			echo "<td>".$game["nbJoueur"]."/".$game["nbJoueurMax"]."</td>";
 			echo "</tr>";
 		}
