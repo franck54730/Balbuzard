@@ -37,24 +37,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
     </head>
     <body>
-
         echo "42";
         <a href="index.php/users/connexion">bidule</a>
 
-<?php /*
-include("cards.php");
-
-$a = cards(); 
-
-$p = 0 ;
-$q = 0 ;
-echo "<br>" ;
-foreach($a as $c){   foreach($c as $d) {echo "$d ";$p++;}; echo "<br>";$q++ ;}
-
-echo "boucle externe $p<br>";
-echo "boucle interne $q";*/
-
-?>
         <div id="container">
             <div id="header">
                 <h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
