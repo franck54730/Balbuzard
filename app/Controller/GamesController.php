@@ -81,6 +81,7 @@ class GamesController extends AppController {
             }
             //fin creation des cartes
 
+
             $this->redirect(array('action' => 'wait', $id_game));
         }
     }
@@ -135,6 +136,30 @@ class GamesController extends AppController {
         //va etre appeler autant de fois qu'il y a de joueur il faut donc tester si le jeu n'a pas 
         //deja distribuer, en verifiant dans la bdd si il y a deja des tuplus existant pour cette 
         //game dans la table deck (il faudra passer par stack))
+
+
+        $this->loadModel("Game");
+        $this->loadModel("Deck");
+        $find = $this->Game->find('first', array('condition' => array("Game.id" => $id_game)));
+
+        $nbjoueur = $find['Game']['nbJoueurMax'];
+        $i = $nbjoueur;
+        $carte = 57;
+
+
+        while ($carte > 1) {
+
+            //penser a un switch qui defini lequelle des joeur recupere la carte en fonction de $i
+
+            $this->Deck->set(array('ordre' => $carte));
+            $this->Deck->save();
+            $this->Deck->clear();
+            $i--;
+            if ($i == 0) {
+                $i = 4;
+            }
+            $carte--;
+        }
     }
 
 }

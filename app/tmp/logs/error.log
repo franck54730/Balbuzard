@@ -1837,3 +1837,63 @@ Stack Trace:
 #4 C:\wamp\www\damm\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
 #6 {main}
+2014-12-06 17:35:47 Error: Fatal Error (1): Call to undefined method View::loadModel() in [C:\wamp\www\damm\app\View\Layouts\default.ctp, line 44]
+2014-12-06 17:35:47 Error: [FatalErrorException] Call to undefined method View::loadModel()
+Request URL: /damm/index.php/
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-06 17:35:47 Error: Fatal Error (1): Call to undefined method View::loadModel() in [C:\wamp\www\damm\app\View\Layouts\default.ctp, line 44]
+2014-12-06 17:35:47 Error: [FatalErrorException] Call to undefined method View::loadModel()
+Request URL: /damm/index.php/
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 44, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-06 18:17:38 Error: Fatal Error (1): Call to undefined function game() in [C:\wamp\www\damm\app\Controller\GamesController.php, line 84]
+2014-12-06 18:17:38 Error: [FatalErrorException] Call to undefined function game()
+Request URL: /damm/index.php/games/create
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 84, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 84, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-06 18:39:29 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\wamp\www\damm\app\Controller\GamesController.php, line 89]
+2014-12-06 18:39:29 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /damm/index.php/games/wait/1
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 89, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 89, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-06 18:48:46 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'damm.games' doesn't exist
+Request URL: /damm/index.php/games/wait/2
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\damm\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Game`.`...', Array)
+#2 C:\wamp\www\damm\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Game`.`...', Array, Array)
+#3 C:\wamp\www\damm\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Game`.`...', false)
+#4 C:\wamp\www\damm\lib\Cake\Model\Model.php(2947): DboSource->read(Object(AppModel), Array)
+#5 C:\wamp\www\damm\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\damm\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\damm\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(AppModel))
+#8 C:\wamp\www\damm\app\Controller\GamesController.php(117): Model->__call('findById', Array)
+#9 C:\wamp\www\damm\app\Controller\GamesController.php(117): AppModel->findById('2')
+#10 [internal function]: GamesController->wait('2')
+#11 C:\wamp\www\damm\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GamesController), Array)
+#12 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#14 C:\wamp\www\damm\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#16 {main}

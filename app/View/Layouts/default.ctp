@@ -38,6 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </head>
     <body>
         echo "42";
+        
         <a href="index.php/users/connexion">bidule</a>
 
         <div id="container">
