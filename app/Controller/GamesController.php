@@ -175,7 +175,9 @@ class GamesController extends AppController {
         echo "<br>";
         $this->set(array(
         				'carte_joueur' => $Cjoueur,
-        				'carte_plateau' => $Cplateau));
+        				'carte_plateau' => $Cplateau,
+        				'id_game' => $id_game
+        			));
     }
     
     public function __cards() {
