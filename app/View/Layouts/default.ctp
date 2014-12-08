@@ -56,7 +56,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             <div id="page">
 	            <div id="content">
 					<div class="post">
-						<h1 class="title">Dobble</h1>
+						
 						<div class="entry">
             
 
