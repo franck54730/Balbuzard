@@ -53,7 +53,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             	</div>
                 
             </div>
-            <div id="page">
+            <div id="page" >
+            <div class="title">
 	            <div id="content">
 					<div class="post">
 						
@@ -66,6 +67,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						</div>
 					</div>
 				</div>
+            </div>
             </div>
             <div id="footer">
 			<?php //echo $this->Html->link(
