@@ -2083,3 +2083,367 @@ Stack Trace:
 #2 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
 #4 {main}
+2014-12-08 18:08:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:09:09 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:09:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:09:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:01 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:14 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:22 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:32 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:43 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:43 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:56 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:10:56 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:11:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:11:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:11:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:11:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:12:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:12:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:14:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:14:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:14:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:14:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:16:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:16:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.png
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:17:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:18:28 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:22:08 Error: Fatal Error (1): Call to undefined method View::assetUrl() in [C:\wamp\www\damm\lib\Cake\View\Helper\HtmlHelper.php, line 803]
+2014-12-08 18:22:08 Error: [FatalErrorException] Call to undefined method View::assetUrl()
+Request URL: /damm/index.php/games/game/1
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 803)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 803, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\wamp\\www\\dam...', 803, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:31 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:23:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:27:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:28:45 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/Images/cartes/1.gif
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:52:49 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /damm/index.php/webroot/css/images/img01.jpg
+Stack Trace:
+#0 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#2 {main}
+2014-12-08 18:55:28 Error: [MissingActionException] Action GamesController::url("2.gif")() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => 'url("2.gif")',
+)
+Request URL: /damm/index.php/games/url("2.gif")
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#4 {main}
+2014-12-08 18:55:29 Error: [MissingActionException] Action GamesController::2.gif() could not be found.
+Exception Attributes: array (
+  'controller' => 'GamesController',
+  'action' => '2.gif',
+)
+Request URL: /damm/index.php/games/2.gif
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest))
+#2 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#4 {main}
+2014-12-08 18:55:45 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\damm\app\View\Games\game.ctp, line 31]
+2014-12-08 18:55:45 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /damm/index.php/games/game/1
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 31, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 31, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:45:19 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\damm\app\View\Games\game.ctp, line 36]
+2014-12-08 19:45:19 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /damm/index.php/games/game/1
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 36, Array)
+#2 C:\wamp\www\damm\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\dam...', 36, Array)
+#3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
