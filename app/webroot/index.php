@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Index
@@ -106,3 +107,4 @@ $Dispatcher->dispatch(
 	new CakeRequest(),
 	new CakeResponse()
 );
+?>

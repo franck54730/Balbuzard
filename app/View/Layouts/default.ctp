@@ -29,7 +29,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('mosaic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -37,19 +37,35 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
     </head>
     <body>
-        echo "42";
         
-        <a href="index.php/users/connexion">bidule</a>
+        
 
-        <div id="container">
+        
             <div id="header">
-                <h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+            
+            	<div id="logo">
+					<?php echo $this->Html->link('Balbuzard','/');?>
+				</div>
+				
+            	<div id="menu">
+            		<?php echo $this->Html->link('Connexion', array('controller' => 'users','action' => 'index','full_base' => true)); ?>
+            		<?php echo $this->Html->link('Salon', array('controller' => 'games','action' => 'lobby','full_base' => true)); ?>
+            	</div>
+                
             </div>
-            <div id="content">
+            <div id="page">
+	            <div id="content">
+					<div class="post">
+						<h1 class="title"></h1>
+						<div class="entry">
+            
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+						</div>
+					</div>
+				</div>
             </div>
             <div id="footer">
 			<?php //echo $this->Html->link(
@@ -62,6 +78,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<?php //echo $cakeVersion; ?>
                 </p>
             </div>
+        
+        
+        <div id="sidebar">
+        	
+        	<li>
+        		<h2 class="widgettitle">Titre</h2>
+	        	<ul>
+					<li>contenu...</li>
+					
+				</ul>
+			</li>
         </div>
 	<?php //echo $this->element('sql_dump'); ?>
     </body>

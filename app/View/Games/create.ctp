@@ -1,5 +1,7 @@
 <!-- File: /app/View/Games/lobby.ctp -->
 
+			
+			<h2>Nouvelle partie : </h2>
 <?php
   echo $this->Form->create('Game', array('action' => 'create'));
   echo $this->Form->input('nom');
