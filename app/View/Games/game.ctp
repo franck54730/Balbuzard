@@ -24,7 +24,10 @@
         margin-bottom: auto;
 
     }
-
+    img{
+        width: 60px;
+        height: 60px;
+    }
 
 </style>
 
