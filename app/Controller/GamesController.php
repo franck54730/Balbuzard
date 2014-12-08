@@ -1,9 +1,34 @@
 <?php
 
 class GamesController extends AppController {
+    var $name = 'Games';
+    var $helpers = array('Html','Ajax','Javascript');
+    var $components = array( 'RequestHandler' );
 
-    public $helpers = array('Html', 'Form');
-
+    public function clickCard($id_game, $id_card, $num_symbole){
+    	$carte_plateau = $this->__getCartePlateau($id_game);
+    	$carte_joueur = $this->__getCarteJoueur($id_game,$this->Session->read('User.id'));
+    	echo $num_symbole."<br>";
+        echo '$carte_plateau : '; print_r($carte_plateau);
+        echo "<br>";
+        echo '$carte_joueur : '; print_r($carte_joueur);
+        echo "<br>";
+    	$good = false;
+    	$i=0;
+    	while(!$good && $i < 8){
+    		echo $carte_joueur['Card'][$num_symbole]." == ".$carte_plateau['Card'][$i]."<br>";
+    		$symbole = 's'.($i+1);
+    		echo "sybole : ".$symbole."<br>";
+    		if($carte_joueur['Card'][$num_symbole] == $carte_plateau['Card'][$symbole]){
+    			$good = true;
+    		}else{
+    			$i++;
+    		}
+    	}
+    	if($good){echo "good : true<br>";}else{echo "good : false<br>";}
+    	
+    }
+    
     public function index() {
         if ($this->Session->check("User")) {
             
@@ -100,10 +125,6 @@ class GamesController extends AppController {
     }
 
     public function game($id_game) {
-        //distribuer les cartes (attention bien verifier que ca na pas deja été fait. cette fonction
-        //va etre appeler autant de fois qu'il y a de joueur il faut donc tester si le jeu n'a pas 
-        //deja distribuer, en verifiant dans la bdd si il y a deja des tuplus existant pour cette 
-        //game dans la table deck (il faudra passer par stack))
         $this->loadModel("Game");
         $this->loadModel("Stack");
         $games = $this->Game->find('all', array('condition' => array("Game.id" => $id_game)));
@@ -169,10 +190,6 @@ class GamesController extends AppController {
         //on recupere $carte_joueur et $carte_plateau
         $Cplateau = $this->__getCartePlateau($id_game);
         $Cjoueur = $this->__getCarteJoueur($id_game, $this->Session->read("User.id"));
-        echo '$carte_plateau : '; print_r($Cplateau);
-        echo "<br>";
-        echo '$carte_joueur : '; print_r($Cjoueur);
-        echo "<br>";
         $this->set(array(
         				'carte_joueur' => $Cjoueur,
         				'carte_plateau' => $Cplateau,
