@@ -27,7 +27,7 @@ CREATE TABLE cards (
 CREATE TABLE games (     
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	nom VARCHAR(30),  
-	nbJoueur INT UNSIGNED DEFAULT 0,
+	nbJoueur INT UNSIGNED DEFAULT 1,
 	nbJoueurMax INT UNSIGNED DEFAULT 4,
 	status INT,
 	id_creator INT UNSIGNED,
@@ -44,7 +44,7 @@ CREATE TABLE lobbies (
 
 CREATE TABLE stacks (     
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	ordre INT UNSIGNED,
+	ordre INT,
 	id_card INT UNSIGNED,
 	id_game INT UNSIGNED,
 	FOREIGN KEY (id_card) REFERENCES cards(id),
@@ -53,7 +53,7 @@ CREATE TABLE stacks (
 
 CREATE TABLE decks (     
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	ordre INT UNSIGNED,
+	ordre INT,
 	id_user INT UNSIGNED,
 	id_stack INT UNSIGNED,
 	FOREIGN KEY (id_user) REFERENCES users(id),

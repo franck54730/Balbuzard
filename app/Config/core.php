@@ -35,7 +35,8 @@
 	
 	Configure::write('STATUS_WAITING', 0);
 	Configure::write('STATUS_PLAY', 1);
-	Configure::write('STATUS_FINISH', 2);
+	Configure::write('STATUS_DEAL', 2);
+	Configure::write('STATUS_FINISH', 3);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
