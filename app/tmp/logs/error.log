@@ -2447,3 +2447,15 @@ Stack Trace:
 #3 C:\wamp\www\damm\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-09 00:09:20 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /damm/index.php/users/view/2
+Stack Trace:
+#0 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\damm\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\wamp\www\damm\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\damm\index.php(41): require('C:\\wamp\\www\\dam...')
+#4 {main}
