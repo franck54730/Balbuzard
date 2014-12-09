@@ -2,9 +2,34 @@
 
 class GamesController extends AppController {
     var $name = 'Games';
-    var $helpers = array('Html','Ajax','Javascript');
-    var $components = array( 'RequestHandler' );
+    var $helpers = array('Html');
 
+	public function getPlayerForGame($id_game) {
+	    // no view to render
+	    $this->autoRender = false;
+	    $this->response->type('json');
+		$json = "{\"joueurs\":[";
+        $this->loadModel('User');
+		$game = $this->Game->findById($id_game);
+        $nbPlayer = $game['Game']['nbJoueur'];
+        $this->loadModel('Lobby');
+        $allLobby = $this->Lobby->find('all');
+        $i = 0;
+        foreach ($allLobby as $lobby) {
+        	$lobby = $lobby['Lobby'];
+            if ($lobby['id_game'] == $id_game) {
+            	$user = $this->User->findById($lobby['id_user']);
+                $json .= "{\"login\":\"".$user['User']['login']."\"}";
+                $i++;
+                if($i < $nbPlayer){
+                	$json .= ",";
+                }
+        	}
+        }
+		$json .= "]}";
+	    $this->response->body($json);
+	}
+    
     public function clickCard($id_game, $id_card, $num_symbole){
     	$carte_plateau = $this->__getCartePlateau($id_game);
     	$carte_joueur = $this->__getCarteJoueur($id_game,$this->Session->read('User.id'));

@@ -1,11 +1,11 @@
-/*DROP TABLE decks;
+DROP TABLE decks;
 DROP TABLE stacks;
 DROP TABLE lobbies;
 DROP TABLE games;
 DROP TABLE cards;
 DROP TABLE users;
 DROP TABLE menus;
-*/
+
 
 CREATE TABLE users (     
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,     
