@@ -4,6 +4,11 @@ class GamesController extends AppController {
     var $name = 'Games';
     var $helpers = array('Html');
     
+    public function finish($id_game){
+    	$game = $this->Game->findById($id_game);
+        $this->set(array('game' => $game));
+    }
+    
     public function getCartePlateauAjax($id_game){
      // no view to render
 	    $this->autoRender = false;
@@ -296,6 +301,9 @@ class GamesController extends AppController {
         //on recupere $carte_joueur et $carte_plateau
         $Cplateau = $this->__getCartePlateau($id_game);
         $Cjoueur = $this->__getCarteJoueur($id_game, $this->Session->read("User.id"));
+        if($Cjoueur == null){
+        	$this->redirect(array('controller' => 'games', 'action' => 'finish', $id_game));
+        }
         $this->set(array(
         				'carte_joueur' => $Cjoueur,
         				'carte_plateau' => $Cplateau,
@@ -391,7 +399,7 @@ class GamesController extends AppController {
         $this->loadModel('Deck');
     	$this->loadModel('Card');
     	$all = $this->Deck->find('all');
-    	$rep;
+    	$rep = null;
     	$ordre = 0;
     	foreach($all as $deck){
     		if($deck['Deck']['id_game'] == $id_game && $deck['Deck']['id_user'] == $id_joueur){
