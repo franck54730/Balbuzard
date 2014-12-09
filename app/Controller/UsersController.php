@@ -37,6 +37,11 @@ class UsersController extends AppController {
 		}
 	}
 	
+	public function deconnexion(){
+		$this->Session->destroy();
+		$this->redirect(array('controller' => 'users','action' => 'connexion'));
+	}
+	
 	public function inscription(){
 		
 		if(!empty($this->data))
@@ -58,7 +63,7 @@ class UsersController extends AppController {
 				$this->User->set( $this->data );
 					
 					
-				debug($this->User->data);
+				
 				if( $this->User->validates() )
 				{
 					$connect = false;

@@ -48,8 +48,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				</div>
 				
             	<div id="menu">
-            		<?php echo $this->Html->link('Connexion', array('controller' => 'users','action' => 'index','full_base' => true)); ?>
-            		<?php echo $this->Html->link('Salon', array('controller' => 'games','action' => 'lobby','full_base' => true)); ?>
+            		<?php //echo $this->Html->link('Connexion', array('controller' => 'users','action' => 'index','full_base' => true)); ?>
+            		<?php     echo $this->element('menu'); ?>
+            		<?php //echo $this->Html->link('Salon', array('controller' => 'games','action' => 'lobby','full_base' => true)); ?>
             	</div>
                 
             </div>

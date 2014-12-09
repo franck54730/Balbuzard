@@ -1,10 +1,11 @@
-DROP TABLE decks;
+/*DROP TABLE decks;
 DROP TABLE stacks;
 DROP TABLE lobbies;
 DROP TABLE games;
 DROP TABLE cards;
 DROP TABLE users;
-
+DROP TABLE menus;
+*/
 
 CREATE TABLE users (     
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,     
@@ -58,4 +59,11 @@ CREATE TABLE decks (
 	id_stack INT UNSIGNED,
 	FOREIGN KEY (id_user) REFERENCES users(id),
 	FOREIGN KEY (id_stack) REFERENCES stacks(id)
+);
+
+CREATE TABLE menus (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(255), 
+	controller VARCHAR(255), 
+	action VARCHAR(255) 
 );
