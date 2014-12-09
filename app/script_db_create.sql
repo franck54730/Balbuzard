@@ -56,9 +56,11 @@ CREATE TABLE decks (
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	ordre INT,
 	id_user INT UNSIGNED,
-	id_stack INT UNSIGNED,
+	id_game INT UNSIGNED,
+	id_card INT UNSIGNED,
 	FOREIGN KEY (id_user) REFERENCES users(id),
-	FOREIGN KEY (id_stack) REFERENCES stacks(id)
+	FOREIGN KEY (id_card) REFERENCES cards(id),
+	FOREIGN KEY (id_game) REFERENCES games(id)
 );
 
 CREATE TABLE menus (

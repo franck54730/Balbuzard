@@ -8,18 +8,32 @@ class GamesController extends AppController {
      // no view to render
 	    $this->autoRender = false;
 	    $this->response->type('json');
-     	$carte = $this->__getCartePlateau($id_game);     	
-		$json = "{\"id\":".$carte['Card']['id'].",";
-		$json .= "\"s1\":".$carte['Card']['s1'].",";
-		$json .= "\"s2\":".$carte['Card']['s2'].",";
-		$json .= "\"s3\":".$carte['Card']['s3'].",";
-		$json .= "\"s4\":".$carte['Card']['s4'].",";
-		$json .= "\"s5\":".$carte['Card']['s5'].",";
-		$json .= "\"s6\":".$carte['Card']['s6'].",";
-		$json .= "\"s7\":".$carte['Card']['s7'].",";
-		$json .= "\"s8\":".$carte['Card']['s8'];
+     	$carte_plateau = $this->__getCartePlateau($id_game);  
+     	$carte_joueur = $this->__getCarteJoueur($id_game,$this->Session->read('User.id'));   	
+		$json = "{\"carte_plateau\":";
+		$json .= "{\"id\":".$carte_plateau['Card']['id'].",";
+		$json .= "\"s1\":".$carte_plateau['Card']['s1'].",";
+		$json .= "\"s2\":".$carte_plateau['Card']['s2'].",";
+		$json .= "\"s3\":".$carte_plateau['Card']['s3'].",";
+		$json .= "\"s4\":".$carte_plateau['Card']['s4'].",";
+		$json .= "\"s5\":".$carte_plateau['Card']['s5'].",";
+		$json .= "\"s6\":".$carte_plateau['Card']['s6'].",";
+		$json .= "\"s7\":".$carte_plateau['Card']['s7'].",";
+		$json .= "\"s8\":".$carte_plateau['Card']['s8'];
+		$json .= "},";
+		$json .= "\"carte_joueur\":";
+		$json .= "{\"id\":".$carte_joueur['Card']['id'].",";
+		$json .= "\"s1\":".$carte_joueur['Card']['s1'].",";
+		$json .= "\"s2\":".$carte_joueur['Card']['s2'].",";
+		$json .= "\"s3\":".$carte_joueur['Card']['s3'].",";
+		$json .= "\"s4\":".$carte_joueur['Card']['s4'].",";
+		$json .= "\"s5\":".$carte_joueur['Card']['s5'].",";
+		$json .= "\"s6\":".$carte_joueur['Card']['s6'].",";
+		$json .= "\"s7\":".$carte_joueur['Card']['s7'].",";
+		$json .= "\"s8\":".$carte_joueur['Card']['s8'];
 		$json .= "}";
-	    $this->response->body($json);
+    	$json .= "}";
+    	$this->response->body($json);
     }
     
 	public function getPlayerForGame($id_game) {
@@ -54,60 +68,68 @@ class GamesController extends AppController {
 	    $this->response->body($json);
 	}
     
-    public function clickCard($id_game, $id_card, $num_symbole){
-    	$carte_plateau = $this->__getCartePlateau($id_game);
-    	$carte_joueur = $this->__getCarteJoueur($id_game,$this->Session->read('User.id'));
+    public function clickCard($id_game, $id_card_plateau, $id_card_joueur, $num_symbole){
+    	$this->loadModel('Card');
+    	$carte_plateau = $this->Card->findById($id_card_plateau);
+    	$carte_joueur = $this->Card->findById($id_card_joueur);
+    	echo "id card plateau : ".$id_card_plateau."<br>";
+    	echo "id card joueur : ".$id_card_joueur."<br>";
     	$good = false;
     	$i=0;
     	while(!$good && $i < 8){
     		$symbole = 's'.($i+1);
+    		echo $carte_joueur['Card'][$num_symbole]." == ".$carte_plateau['Card'][$symbole]."<br>";
     		if($carte_joueur['Card'][$num_symbole] == $carte_plateau['Card'][$symbole]){
     			$good = true;
     		}else{
     			$i++;
     		}
     	}
+    	echo $good;
+    	
     	if($good){
     		$this->loadModel('Stack');
     		$this->loadModel('Card');
     		$this->loadModel('Deck');
+    		
+    		//on change l'ordre de la carte dans le stack qui vient au dessus si c'est bon
     		$stacks = $this->Stack->find('all');
 	    	$j=0;
 	    	$stack;
+	    	$ordre;
 	        $trouv = false;
-	        $ordre = $this->__getOrdreMax($id_game);
 	        while(!$trouv && $j < count($stacks)){
-	        	$stack=$stacks[$j];
-	        	if($stack['Stack']['id_card'] == $id_card){
+	        	$stack = $stacks[$j];
+	        	if($stack['Stack']['id_card'] == $id_card_joueur){
 	        		$trouv = true;
 	        	}else{
 	        		$j++;
 	        	}
 	        }
 	        $id_stack = $stack['Stack']['id'];
+	        $newOrdre =$this->__getOrdreMaxStack($id_game)+1;
 	        $this->Stack->clear();
     		$this->Stack->id = $id_stack;
-    		echo "id stack : $id_stack<br>";
-            $this->Stack->saveField("ordre", $ordre+1);
-            
-            
+            $this->Stack->saveField("ordre", $newOrdre);
+	        $this->Stack->clear();
+    		//on change l'ordre de la carte dans le deck qui part et va dans le stack
     		$decks = $this->Deck->find('all');
     		$j=0;
 	    	$deck;
 	        $trouv = false;
 	        while(!$trouv && $j < count($stacks)){
 	        	$deck=$decks[$j];
-	        	if($deck['Deck']['id_stack'] == $id_stack && $deck['Deck']['id_user'] == $this->Session->read('User.id')){
+	        	if($deck['Deck']['id_card'] == $id_card_joueur && $deck['Deck']['id_user'] == $this->Session->read('User.id')){
 	        		$trouv = true;
 	        	}else{
 	        		$j++;
 	        	}
 	        }
 	        $id_deck = $deck['Deck']['id'];
-    		echo "id deck : $id_deck<br>";
 	        $this->Deck->clear();
 	        $this->Deck->id = $id_deck;
             $this->Deck->saveField("ordre", -1);
+	        $this->Deck->clear();
     	}
         $this->redirect(array('controller' => 'games', 'action' => 'game', $id_game));
     	
@@ -256,7 +278,7 @@ class GamesController extends AppController {
 	        		$ordre = $stack['Stack']['ordre'];
 	        		//si ce n'est pas la derniere carte on la distribue
 	        		if($ordre != 1){
-	        			$this->__saveDeck($tabIdJoueur[$i], $stack['Stack']['id'], $tabOrdreJoueur[$i]);
+	        			$this->__saveDeck($tabIdJoueur[$i], $id_game, $tabOrdreJoueur[$i],$stack['Stack']['id_card']);
 	        			$tabOrdreJoueur[$i] += 1;
 	        			$this->Stack->id = $stack['Stack']['id'];
                 		$this->Stack->saveField("ordre", -1);
@@ -274,11 +296,6 @@ class GamesController extends AppController {
         //on recupere $carte_joueur et $carte_plateau
         $Cplateau = $this->__getCartePlateau($id_game);
         $Cjoueur = $this->__getCarteJoueur($id_game, $this->Session->read("User.id"));
-        echo "<br>";
-        print_r($Cplateau);
-        echo "<br>";
-        print_r($Cjoueur);
-        echo "<br>";
         $this->set(array(
         				'carte_joueur' => $Cjoueur,
         				'carte_plateau' => $Cplateau,
@@ -354,31 +371,37 @@ class GamesController extends AppController {
         return $tabId;
     }  
     
-    public function __saveDeck($id_user, $id_stack, $ordre){
+    public function __saveDeck($id_user, $id_game, $ordre, $id_card){
         $this->loadModel("Deck");
-        $this->Deck->set(array('id_user' => $id_user, 'id_stack' => $id_stack, 'ordre' => $ordre));
+        $this->Deck->clear();
+        $this->Deck->set(array('id_user' => $id_user, 'id_game' => $id_game, 'ordre' => $ordre, 'id_card' => $id_card));
         $this->Deck->save();
+        $this->Deck->clear();
+    }
+    
+    public function __updateOrdreDeck($id_deck, $ordre){
+        $this->loadModel("Deck");
+        $this->Deck->clear();
+        $this->Deck->id = $id_deck;
+        $this->Deck->saveField("ordre", $ordre);
         $this->Deck->clear();
     }
     
     public function __getCarteJoueur($id_game, $id_joueur){
         $this->loadModel('Deck');
     	$this->loadModel('Card');
-    	$this->loadModel('Stack');
     	$all = $this->Deck->find('all');
-    	$rep = array();
+    	$rep;
     	$ordre = 0;
     	foreach($all as $deck){
-    		$stack = $this->Stack->findById($deck['Deck']['id_stack']);
-    		if($stack['Stack']['id_game'] == $id_game && $deck['Deck']['id_user'] == $id_joueur){
-    			//echo "iddeck : ".$deck['Deck']['id'];
+    		if($deck['Deck']['id_game'] == $id_game && $deck['Deck']['id_user'] == $id_joueur){
     			if($ordre<$deck['Deck']['ordre']){
-	    			$ordre=$stack['Stack']['ordre'];
-    				$rep = $stack;
+	    			$ordre=$deck['Deck']['ordre'];
+    				$rep = $deck['Deck']['id_card'];
     			}
     		}
     	}
-    	return $this->Card->findById($rep['Stack']['id_card']);
+    	return $this->Card->findById($rep);
     }
 
     public function __getCartePlateau($id_game){
@@ -398,18 +421,35 @@ class GamesController extends AppController {
     	return $this->Card->findById($rep['Stack']['id_card']);
     }
     
-    public function __getOrdreMax($id_game){
+    public function __getOrdreMaxStack($id_game){
     	$rep = 0;
     	$ordre = 0;
     	$this->loadModel('Stack');
     	$all = $this->Stack->find('all');
 	    foreach($all as $stack){
 	    	if($stack['Stack']['id_game'] == $id_game){
-	    		if($ordre<$stack['Stack']['ordre'])
+	    		if($ordre<$stack['Stack']['ordre']){
 	    			$rep = $stack['Stack']['ordre'];
 	    			$ordre=$stack['Stack']['ordre'];
+	    		}
 	    	}
 	    }
 	    return $rep;
     }    
+    
+    public function __getOrdreMaxDeck($id_game,$id_user){
+    	$rep = 0;
+    	$ordre = 0;
+    	$this->loadModel('Stack');
+    	$all = $this->Stack->find('all');
+	    foreach($all as $stack){
+	    	if($stack['Stack']['id_game'] == $id_game){
+	    		if($ordre<$stack['Stack']['ordre']){
+	    			$rep = $stack['Stack']['ordre'];
+	    			$ordre=$stack['Stack']['ordre'];
+	    		}
+	    	}
+	    }
+	    return $rep;
+    }   
 }
