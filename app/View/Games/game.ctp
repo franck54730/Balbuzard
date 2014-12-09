@@ -37,15 +37,19 @@ $var = 57;
 echo $carte_joueur['Card']['id'];
 echo $carte_plateau['Card']['s1'];
 
+echo $ajax->remoteTimer(
+    array('update'=>'bidule','frequency'=>'1')
+);
+
 ?>
 
 
 
-
+<p id="bidule"><?php echo $var;$var++;?></p>
 
 
 <p align="center">carte du plateau</p>
-<div class="roundedImage" align="center">
+<div class="roundedImage" align="center" id="plateau">
     
     <table class="tab" >
         <tr>
