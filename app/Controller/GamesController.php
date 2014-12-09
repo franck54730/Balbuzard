@@ -16,16 +16,19 @@ class GamesController extends AppController {
     	$good = false;
     	$i=0;
     	while(!$good && $i < 8){
-    		echo $carte_joueur['Card'][$num_symbole]." == ".$carte_plateau['Card'][$i]."<br>";
     		$symbole = 's'.($i+1);
-    		echo "sybole : ".$symbole."<br>";
     		if($carte_joueur['Card'][$num_symbole] == $carte_plateau['Card'][$symbole]){
     			$good = true;
     		}else{
     			$i++;
     		}
     	}
-    	if($good){echo "good : true<br>";}else{echo "good : false<br>";}
+    	if($good){
+    		echo "good : true<br>";
+    	}else{
+            $this->redirect(array('controller' => 'games', 'action' => 'game', $id_game));
+    		echo "good : false<br>";
+    	}
     	
     }
     
