@@ -2,26 +2,24 @@
 <style type="text/css">
     .roundedImage{
         border-style:solid dotted;
-        border-color:black red;
+        border-color: black red ;
         overflow:hidden;
         -webkit-border-radius:100px;
         -moz-border-radius:100px;
         border-radius:100px;
         width:280px;
         height:280px;
-        background-image: url(1.png);
+        vertical-align: middle
 
     }
 
-    .bidule{
-        background: url(2.gif);
-    }
     .tab{
 
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
+        
 
     }
     img{
@@ -39,17 +37,24 @@ $var = 57;
 echo $carte_joueur['Card']['id'];
 echo $carte_plateau['Card']['s1'];
 
+
+
+?>
+<?php
+echo $ajax->remoteTimer(
+    array(
+    'url' => array( 'controller' => 'posts', 'action' => 'voir', 1 ),
+    'update' => 'post', 'complete' => 'alert( "requête terminée" )',
+    'position' => 'bottom', 'frequency' => 5
+    )
+);
 ?>
 
 
-
-
-
-
-<p align="center">carte du plateau</p>
-<div class="roundedImage" align="center">
+<p>carte du plateau</p>
+<div class="roundedImage" align="center" id="post">
     
-    <table class="tab" align="center">
+    <table class="tab" >
         <tr>
             <td></td>
             <td ><?php echo $this->Html->image("cartes/".$carte_plateau['Card']['s1'].".gif")?></td>
