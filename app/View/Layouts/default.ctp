@@ -85,9 +85,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <div id="sidebar">
         	
         	<li>
-        		<h2 class="widgettitle">Titre</h2>
+        		<h2 class="widgettitle">Réalisé par</h2>
 	        	<ul>
-					<li>contenu...</li>
+					<li>Franck</li>
+					<li>Valérian</li>
+					<li>Ahmed</li>
 					
 				</ul>
 			</li>

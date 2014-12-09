@@ -2083,3 +2083,415 @@ Stack Trace:
 #2 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
 #4 {main}
+2014-12-08 18:22:11 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 18:22:11 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:22:40 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 4]
+2014-12-08 18:22:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:08 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 4]
+2014-12-08 18:23:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:09 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 4]
+2014-12-08 18:23:09 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 4, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 18:23:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:43 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 18:23:43 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:23:44 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 18:23:44 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 18:24:32 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/balbuzard/app/Controller/UsersController.php, line 40]
+2014-12-08 18:24:32 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/balbuz...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/balbuz...', 40, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/balbuz...', 40, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:16:09 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 19:16:09 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:16:53 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 19:16:53 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:16:54 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 19:16:54 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:17:01 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 6]
+2014-12-08 19:17:01 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 6, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 19:37:51 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/balbuzard/app/Controller/UsersController.php, line 45]
+2014-12-08 19:37:51 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/balbuz...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/balbuz...', 45, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/balbuz...', 45, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 20:23:18 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /index.php/users/view/21
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#4 {main}
+2014-12-08 20:23:26 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /index.php/users/view/1
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#4 {main}
+2014-12-08 21:28:32 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [/var/www/balbuzard/app/Model/User.php, line 52]
+2014-12-08 21:28:32 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 52, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 52, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 21:29:25 Error: Fatal Error (1): Class 'Security' not found in [/var/www/balbuzard/app/Model/User.php, line 40]
+2014-12-08 21:29:25 Error: [FatalErrorException] Class 'Security' not found
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Security...', '/var/www/balbuz...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Security...', '/var/www/balbuz...', 40, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Security...', '/var/www/balbuz...', 40, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 22:06:19 Error: Fatal Error (1): Class 'Security' not found in [/var/www/balbuzard/app/Model/User.php, line 41]
+2014-12-08 22:06:19 Error: [FatalErrorException] Class 'Security' not found
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Security...', '/var/www/balbuz...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Security...', '/var/www/balbuz...', 41, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Security...', '/var/www/balbuz...', 41, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 22:23:01 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(UsersController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 22:23:26 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(UsersController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 23:08:26 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/balbuzard/app/Model/User.php, line 36]
+2014-12-08 23:08:26 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 36, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 36, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:08:55 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 23:09:52 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/balbuzard/app/Model/User.php, line 50]
+2014-12-08 23:09:52 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/balbuz...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/balbuz...', 50, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/balbuz...', 50, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:15:25 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 23:15:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/balbuzard/app/Model/User.php, line 50]
+2014-12-08 23:15:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/balbuz...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/balbuz...', 50, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/balbuz...', 50, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:19:35 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 23:20:21 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/balbuzard/lib/Cake/Utility/String.php, line 228]
+2014-12-08 23:20:21 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/balbuz...', 228)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/balbuz...', 228, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/balbuz...', 228, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:22:20 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-08 23:22:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/balbuzard/app/Model/User.php, line 49]
+2014-12-08 23:22:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/balbuz...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/balbuz...', 49, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/balbuz...', 49, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:26:30 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/var/www/balbuzard/app/Model/User.php, line 54]
+2014-12-08 23:26:30 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/var/www/balbuz...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/var/www/balbuz...', 54, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/var/www/balbuz...', 54, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-08 23:49:01 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-09 00:01:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 12]
+2014-12-09 00:01:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 12, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 12, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-09 00:26:21 Error: Fatal Error (4): syntax error, unexpected 'before' (T_STRING) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 24]
+2014-12-09 00:26:21 Error: [FatalErrorException] syntax error, unexpected 'before' (T_STRING)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 24, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 24, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-09 00:27:51 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/balbuzard/app/View/Users/inscription.ctp, line 18]
+2014-12-09 00:27:51 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /index.php/users/inscription
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/balbuz...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/balbuz...', 18, Array)
+#2 /var/www/balbuzard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/balbuz...', 18, Array)
+#3 /var/www/balbuzard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-09 01:00:07 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /index.php/users/view/3
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#4 {main}
+2014-12-09 01:01:52 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/connexion
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}
+2014-12-09 01:02:00 Error: [BadRequestException] The request has been black-holed
+Request URL: /index.php/users/connexion
+Stack Trace:
+#0 /var/www/balbuzard/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/balbuzard/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/balbuzard/lib/Cake/Event/CakeEventManager.php(242): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/balbuzard/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(187): Controller->startupProcess()
+#7 /var/www/balbuzard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/balbuzard/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/balbuzard/index.php(41): require('/var/www/balbuz...')
+#10 {main}

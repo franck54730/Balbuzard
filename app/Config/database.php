@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
 		'port' => '',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'damm',
+		'database' => 'balbuzard',
 		'schema' => '',
 		'prefix' => '',
 		'encoding' => 'utf8'
@@ -84,7 +84,7 @@ class DATABASE_CONFIG {
 		'port' => '',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'damm',
+		'database' => 'balbuzard',
 		'schema' => '',
 		'prefix' => '',
 		'encoding' => 'utf8'
