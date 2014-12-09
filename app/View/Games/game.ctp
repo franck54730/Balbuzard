@@ -23,7 +23,7 @@
 	      		return false;
 	    	}
 	    	httpRequest.onreadystatechange = alertContents;
-	    	httpRequest.open('GET', 'http://82.244.102.60/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
+	    	httpRequest.open('GET', 'http://localhost/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
 	    	httpRequest.send(null);
 	  	}
 	
@@ -153,7 +153,10 @@
     }
 
 </style>
-<p align="center">carte du plateau</p>
+
+<table><tr><td text-align="middle">carte plateau</td><td>carte joueur</td></tr>
+    <td>
+    
 <div class="roundedImage" align="center" id="post">
     <table class="tab" id="table_carte_plateau">
         <tr>
@@ -186,8 +189,8 @@
         </tr>
     </table>
 </div>
+    </td><td>
 
-<p align="center">carte du joueur</p>
 <div class="roundedImage" align="center">
     
     <table class="tab" align="center" id="table_carte_joueur">
@@ -267,4 +270,5 @@
             <td></td>
         </tr>
     </table>
-</div>
+</div></td>
+</table>
