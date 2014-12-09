@@ -3,30 +3,54 @@
 class GamesController extends AppController {
     var $name = 'Games';
     var $helpers = array('Html');
-
-	public function getPlayerForGame($id_game) {
-	    // no view to render
+    
+    public function getCartePlateauAjax($id_game){
+     // no view to render
 	    $this->autoRender = false;
 	    $this->response->type('json');
-		$json = "{\"joueurs\":[";
-        $this->loadModel('User');
+     	$carte = $this->__getCartePlateau($id_game);     	
+		$json = "{\"id\":".$carte['Card']['id'].",";
+		$json .= "\"s1\":".$carte['Card']['s1'].",";
+		$json .= "\"s2\":".$carte['Card']['s2'].",";
+		$json .= "\"s3\":".$carte['Card']['s3'].",";
+		$json .= "\"s4\":".$carte['Card']['s4'].",";
+		$json .= "\"s5\":".$carte['Card']['s5'].",";
+		$json .= "\"s6\":".$carte['Card']['s6'].",";
+		$json .= "\"s7\":".$carte['Card']['s7'].",";
+		$json .= "\"s8\":".$carte['Card']['s8'];
+		$json .= "}";
+	    $this->response->body($json);
+    }
+    
+	public function getPlayerForGame($id_game) {
 		$game = $this->Game->findById($id_game);
-        $nbPlayer = $game['Game']['nbJoueur'];
-        $this->loadModel('Lobby');
-        $allLobby = $this->Lobby->find('all');
-        $i = 0;
-        foreach ($allLobby as $lobby) {
-        	$lobby = $lobby['Lobby'];
-            if ($lobby['id_game'] == $id_game) {
-            	$user = $this->User->findById($lobby['id_user']);
-                $json .= "{\"login\":\"".$user['User']['login']."\"}";
-                $i++;
-                if($i < $nbPlayer){
-                	$json .= ",";
-                }
-        	}
+		$json ="{\"redirect\":1}";
+        if ($game['Game']["status"] == Configure::read('STATUS_DEAL')) {
+        	$json = "{\"redirect\":1}";
+        }else{
+        	$json = "{\"joueurs\":[";
+		    // no view to render
+		    $this->autoRender = false;
+		    $this->response->type('json');
+	        $this->loadModel('User');
+			$game = $this->Game->findById($id_game);
+	        $nbPlayer = $game['Game']['nbJoueur'];
+	        $this->loadModel('Lobby');
+	        $allLobby = $this->Lobby->find('all');
+	        $i = 0;
+	        foreach ($allLobby as $lobby) {
+	        	$lobby = $lobby['Lobby'];
+	            if ($lobby['id_game'] == $id_game) {
+	            	$user = $this->User->findById($lobby['id_user']);
+	                $json .= "{\"login\":\"".$user['User']['login']."\"}";
+	                $i++;
+	                if($i < $nbPlayer){
+	                	$json .= ",";
+	                }
+	        	}
+	        }
+			$json .= "]}";
         }
-		$json .= "]}";
 	    $this->response->body($json);
 	}
     
@@ -148,7 +172,7 @@ class GamesController extends AppController {
             $users = array();
             $game = $this->Game->findById($id);
             //si la partie est commencer on commence a jouer
-            if ($game['Game']["status"] == Configure::read('STATUS_PLAY')) {
+            if ($game['Game']["status"] == Configure::read('STATUS_DEAL')) {
                 $this->redirect(array('controller' => 'games', 'action' => 'game', $id));
             }
             $allLobby = $this->Lobby->find('all');

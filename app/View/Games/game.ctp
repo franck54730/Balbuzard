@@ -1,4 +1,75 @@
 <!-- File: /app/View/Games/lobby.ctp -->
+<script type="text/javascript">
+	(function() {
+  		var httpRequest;
+  	  	var t=setInterval(makeRequest,500);
+	  	function makeRequest() {
+	    	if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+	      		httpRequest = new XMLHttpRequest();
+	    	} else if (window.ActiveXObject) { // IE
+	      		try {
+	        		httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+	      		} 
+	      		catch (e) {
+	        		try {
+	          			httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+	        		} 
+	        		catch (e) {}
+	      		}
+	    	}
+	
+	    	if (!httpRequest) {
+	      		alert('Giving up :( Cannot create an XMLHTTP instance');
+	      		return false;
+	    	}
+	    	httpRequest.onreadystatechange = alertContents;
+	    	httpRequest.open('GET', 'http://82.244.102.60/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
+	    	httpRequest.send();
+	  	}
+	
+	  	function alertContents() {
+	    	if (httpRequest.readyState === 4) {
+	      		if (httpRequest.status === 200) {
+		      		var table = document.getElementById('table_carte_plateau');
+ 					var string = httpRequest.responseText;
+					var json = JSON.parse(string);
+					var s1 = json['s1'];
+					var s2 = json['s2'];
+					var s3 = json['s3'];
+					var s4 = json['s4'];
+					var s5 = json['s5'];
+					var s6 = json['s6'];
+					var s7 = json['s7'];
+					var s8 = json['s8'];
+					
+					var innerTable = "<tbody><tr>" + 
+					  							"<td></td>" + 
+												"<td><img src=\"/app/webroot/img/cartes/"+s1+".gif\" alt=\"\"></td>" +
+												"<td><img src=\"/app/webroot/img/cartes/"+s2+".gif\" alt=\"\"></td>" +
+									            "<td></td>" +
+											"</tr><tr>" +
+					  							"<td><img src=\"/app/webroot/img/cartes/"+s3+".gif\" alt=\"\"></td>" + 
+												"<td></td>" +
+												"<td></td>" +
+									            "<td><img src=\"/app/webroot/img/cartes/"+s4+".gif\" alt=\"\"></td>" +
+											"</tr><tr>"+
+					  							"<td><img src=\"/app/webroot/img/cartes/"+s5+".gif\" alt=\"\"></td>" + 
+												"<td></td>" +
+												"<td></td>" +
+									            "<td><img src=\"/app/webroot/img/cartes/"+s6+".gif\" alt=\"\"></td>" +
+											"</tr><tr>"+
+					  							"<td></td>" + 
+												"<td><img src=\"/app/webroot/img/cartes/"+s7+".gif\" alt=\"\"></td>" +
+												"<td><img src=\"/app/webroot/img/cartes/"+s8+".gif\" alt=\"\"></td>" +
+									            "<td></td>" +
+											"</tr></tbody>";
+					table.innerHTML = innerTable;
+	      		}
+	    	}
+	  	}
+	})();
+</script>
+
 <style type="text/css">
     .roundedImage{
         border-style:solid dotted;
@@ -45,8 +116,7 @@ echo $carte_plateau['Card']['s1'];
 
 <p>carte du plateau</p>
 <div class="roundedImage" align="center" id="post">
-    
-    <table class="tab" >
+    <table class="tab" id="table_carte_plateau">
         <tr>
             <td></td>
             <td ><?php echo $this->Html->image("cartes/".$carte_plateau['Card']['s1'].".gif")?></td>

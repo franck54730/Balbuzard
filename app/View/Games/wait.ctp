@@ -32,27 +32,34 @@
 	  	function alertContents() {
 	    	if (httpRequest.readyState === 4) {
 	      		if (httpRequest.status === 200) {
-		      		var table = document.getElementById('table_joueur');
-		      		var innerTable = "<tbody><tr><th>Joueurs</th></tr>";
  					var string = httpRequest.responseText;
-					var json = JSON.parse(string);
-					var joueurs = json['joueurs'];
-	        		for(var i = 0; i < joueurs.length; i++) {
-		        		var joueur = joueurs[i];
-						var string2 = JSON.stringify(joueur);
-						var login = joueur['login']
-						innerTable += "<tr><td>"+login+"</td></tr>";
-				    }
-				    innerTable += "</tbody>";
-				    table.innerHTML = innerTable;
-	      		} else {
-	        		alert('There was a problem with the request.');
-	      		}
+ 				
+ 					if(string != ""){
+ 			      		var table = document.getElementById('table_joueur');
+ 			      		var innerTable = "<tbody><tr><th>Joueurs</th></tr>";
+ 	 					var json = JSON.parse(string);
+
+						var redirect = json['redirect'];
+						var joueurs = json['joueurs'];
+		        		for(var i = 0; i < joueurs.length; i++) {
+			        		var joueur = joueurs[i];
+							var string2 = JSON.stringify(joueur);
+							var login = joueur['login']
+							innerTable += "<tr><td>"+login+"</td></tr>";
+					    }
+					    innerTable += "</tbody>";
+					    table.innerHTML = innerTable;
+ 	 				}else{	
+ 	 	 				window.location.href = 'http://82.244.102.60/index.php/games/game/'+<?php echo $game['id'];?>;
+ 	 	 			}
+					
+	      		}else
+	 				window.location.href = 'http://82.244.102.60/index.php/games/wait/'+<?php echo $game['id'];?>;
 	    	}
 	  	}
 	})();
 </script>
-
+<p id='test'></p>
 <h2>Partie : <?php echo $game['nom']?></h2>
 <?php if($game['id_creator'] == $this->Session->read("User.id")) echo $this->Html->link("Débuter la partie", array('controller' => 'games','action' => 'game', $game['id'] ));?>
 <table id="table_joueur">
