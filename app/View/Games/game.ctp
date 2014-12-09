@@ -125,6 +125,28 @@
 </script>
 
 <style type="text/css">
+    /*
+    table {
+ border-width:1px; 
+ border-style:solid; 
+ border-color:black;
+ width:50%;
+ }
+td { 
+ border-width:1px;
+ border-style:solid; 
+ border-color:red;
+ width:50%;
+ }*/
+ 
+ div.bid { 
+margin:0; 
+padding:0; 
+text-align:center; 
+font-size:smaller; // C'est moins important on met en plus petit Oo.
+color:  blue;
+} 
+
     .roundedImage{
         border-style:solid dotted;
         border-color: black red ;
@@ -154,7 +176,7 @@
 
 </style>
 
-<table><tr><td text-align="middle">carte plateau</td><td>carte joueur</td></tr>
+<table><tr><td text-align="middle"><div class ="bid">carte plateau</div></td><td><div class="bid">carte joueur</div></td></tr>
     <td>
     
 <div class="roundedImage" align="center" id="post">
