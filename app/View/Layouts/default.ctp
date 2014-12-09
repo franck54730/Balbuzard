@@ -87,9 +87,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         	<li>
         		<h2 class="widgettitle">Réalisé par</h2>
 	        	<ul>
-					<li>Franck</li>
-					<li>Valérian</li>
-					<li>Ahmed</li>
+					<li >
+						<table cellspacing="15">
+							<tr>
+								<th ><?php echo $this->Html->image('ul.jpeg', array('alt' => 'CakePHP'));?></th>
+							</tr>
+							<tr >
+								<td>Franck</td>
+								<td>Valérian</td>
+								<td>Ahmed</td>
+							</tr>
+						</table>    
+					</li>
+					
+					
 					
 				</ul>
 			</li>
