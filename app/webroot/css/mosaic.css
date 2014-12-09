@@ -135,7 +135,11 @@ a:hover {
 /* Post Block */
 
 .post {
-	background: url(images/img06.jpg) repeat-y 147px 0;
+	
+	background-image: url(images/img06.jpg) ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
 }
 
 .post .bgbottom {
