@@ -37,19 +37,22 @@ $var = 57;
 echo $carte_joueur['Card']['id'];
 echo $carte_plateau['Card']['s1'];
 
-echo $ajax->remoteTimer(
-    array('update'=>'bidule','frequency'=>'1')
-);
 
+
+?>
+<?php
+echo $ajax->remoteTimer(
+    array(
+    'url' => array( 'controller' => 'posts', 'action' => 'voir', 1 ),
+    'update' => 'post', 'complete' => 'alert( "requête terminée" )',
+    'position' => 'bottom', 'frequency' => 5
+    )
+);
 ?>
 
 
-
-<p id="bidule"><?php echo $var;$var++;?></p>
-
-
-<p align="center">carte du plateau</p>
-<div class="roundedImage" align="center" id="plateau">
+<p>carte du plateau</p>
+<div class="roundedImage" align="center" id="post">
     
     <table class="tab" >
         <tr>
