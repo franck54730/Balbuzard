@@ -40,15 +40,7 @@ echo $carte_plateau['Card']['s1'];
 
 
 ?>
-<?php
-echo $ajax->remoteTimer(
-    array(
-    'url' => array( 'controller' => 'posts', 'action' => 'voir', 1 ),
-    'update' => 'post', 'complete' => 'alert( "requête terminée" )',
-    'position' => 'bottom', 'frequency' => 5
-    )
-);
-?>
+
 
 
 <p>carte du plateau</p>
@@ -92,30 +84,77 @@ echo $ajax->remoteTimer(
     <table class="tab" align="center">
         <tr>
             <td></td>
-            <td ><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s1'].".gif")?></td>
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s2'].".gif"); ?></td>
+            <td >
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s1'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s1']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s2'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s2']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
             <td></td>
         </tr>
         <tr>
 
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s3'].".gif"); ?></td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s3'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s3']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
             <td></td>
             <td></td>
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s4'].".gif"); ?></td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s4'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s4']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
 
         </tr>
         <tr>
 
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s5'].".gif"); ?></td>
+            <td>
+<?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s5'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s5']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>            </td>
             <td></td>
             <td></td>
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s6'].".gif"); ?></td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s6'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s6']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
 
         </tr>
         <tr>
             <td></td>
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s7'].".gif"); ?></td>
-            <td><?php echo $this->Html->image("cartes/".$carte_joueur['Card']['s8'].".gif"); ?></td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s7'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s7']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
+            <td>
+                <?php echo $this->Html->link(
+          $this->Html->image("cartes/".$carte_joueur['Card']['s8'].".gif", array('alt' => "Texte alternatif")), // Recherche dans le dossier webroot/img
+          array('controller' => 'Games',  'action' => 'clickcard',  $id_game, $carte_joueur['Card']['id'], $carte_joueur['Card']['s8']),
+          array('escape' => false) // Ceci pour indiquer de ne pas échapper les caractères HTML du lien vu qu'ici tu as une image
+     );?>
+            </td>
             <td></td>
         </tr>
     </table>
