@@ -44,7 +44,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             <div id="header">
             
             	<div id="logo">
-					<?php echo $this->Html->link('Balbuzard','/');?>
+					<?php echo $this->Html->link('Balbuzard', array('controller' => 'menus', 'action' => 'regles'));?>
 				</div>
 				
             	<div id="menu">
