@@ -40,7 +40,6 @@ class GamesController extends AppController {
 		$json .= "\"s8\":".$carte_joueur['Card']['s8'];
 		$json .= "}";
     	$json .= "}";
-    	//echo $json;
     	$this->response->body($json);
     }
     

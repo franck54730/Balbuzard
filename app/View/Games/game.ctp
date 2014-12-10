@@ -23,7 +23,7 @@
 	      		return false;
 	    	}
 	    	httpRequest.onreadystatechange = alertContents;
-	    	httpRequest.open('GET', 'http://82.244.102.60/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
+	    	httpRequest.open('GET', 'http://localhost/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
 	    	httpRequest.send(null);
 	  	}
 	
@@ -32,7 +32,6 @@
 	      		if (httpRequest.status === 200) {
 		      		var table = document.getElementById('table_carte_plateau');
  					var string = httpRequest.responseText;
- 					//alert(string);
 					var jsonAll = JSON.parse(string);
 					var json = jsonAll['carte_plateau'];
 					var id_plateau = json['id'];
