@@ -23,8 +23,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <head>
 	<?php echo $this->Html->charset(); ?>
         <title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+        Balbuzard
         </title>
 	<?php
 		echo $this->Html->meta('icon');
