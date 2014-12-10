@@ -5,8 +5,10 @@ class GamesController extends AppController {
     var $helpers = array('Html');
     
     public function finish($id_game){
+    	$this->loadModel('User');
     	$game = $this->Game->findById($id_game);
-        $this->set(array('game' => $game));
+    	$winner = $this->User->findById($game['Game']['id_winner']);
+        $this->set(array('game' => $game, 'winner'=> $winner));
     }
     
     public function getCartePlateauAjax($id_game){
@@ -250,6 +252,9 @@ class GamesController extends AppController {
         		$j++;
         	}
         }
+        if($game['Game']['status'] == Configure::read('STATUS_FINISH')){
+        	$this->redirect(array('controller' => 'games', 'action' => 'finish', $id_game));
+        }
         if($game['Game']['status'] == Configure::read('STATUS_WAITING')){
         	$this->Game->id = $game['Game']['id'];
         	$this->Game->saveField("status", Configure::read('STATUS_PLAY'));
@@ -302,6 +307,9 @@ class GamesController extends AppController {
         $Cplateau = $this->__getCartePlateau($id_game);
         $Cjoueur = $this->__getCarteJoueur($id_game, $this->Session->read("User.id"));
         if($Cjoueur == null){
+        	$this->Game->id = $id_game;
+            $this->Game->saveField("status", Configure::read('STATUS_FINISH'));
+            $this->Game->saveField("id_winner", $this->Session->read('User.id'));
         	$this->redirect(array('controller' => 'games', 'action' => 'finish', $id_game));
         }
         $this->set(array(

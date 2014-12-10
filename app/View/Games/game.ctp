@@ -215,7 +215,7 @@ color:  blue;
 
 <div class="roundedImage" align="center">
     
-    <table class="tab" align="center" id="table_carte_joueur">
+    <table class="tab" id="table_carte_joueur">
         <tr>
             <td></td>
             <td >
