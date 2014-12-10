@@ -10,5 +10,9 @@ class MenusController extends AppController {
 			$this->set('menus', $this->Menu->find('all'));
 		}
 	}
+	
+	function regles() {
+		
+	}
 }
 ?>
