@@ -348,10 +348,12 @@ class GamesController extends AppController {
 
 	public function __createCard($id_game){
             $a = $this->__cards();
+            shuffle($a);
             $ordre = 1;
-
+			
             //creation des cartes
             foreach ($a as $c) {
+            	shuffle($c);
                 //creation d'une carte
                 $this->loadModel('Card');
                 $symbole = 1;
