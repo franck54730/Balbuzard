@@ -125,6 +125,10 @@
 </script>
 
 <style type="text/css">
+    a:link 
+{ 
+ text-decoration:none; 
+}
     /*
     table {
  border-width:1px; 
