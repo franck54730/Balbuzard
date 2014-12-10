@@ -125,10 +125,7 @@
 </script>
 
 <style type="text/css">
-    a:link 
-{ 
- text-decoration:none; 
-}
+    
     /*
     table {
  border-width:1px; 
@@ -187,7 +184,7 @@ color:  blue;
     <table class="tab" id="table_carte_plateau">
         <tr>
             <td></td>
-            <td ><?php echo $this->Html->image("cartes/".$carte_plateau['Card']['s1'].".gif")?></td>
+            <td ><?php echo $this->Html->image("cartes/".$carte_plateau['Card']['s1'].".gif",array("style"=>"color: black"))?></td>
             <td><?php echo $this->Html->image("cartes/".$carte_plateau['Card']['s2'].".gif"); ?></td>
             <td></td>
         </tr>
