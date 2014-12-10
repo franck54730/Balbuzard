@@ -23,7 +23,7 @@
 	      		return false;
 	    	}
 	    	httpRequest.onreadystatechange = alertContents;
-	    	httpRequest.open('GET', 'http://82.244.102.60/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
+	    	httpRequest.open('GET', 'http://localhost/index.php/games/getCartePlateauAjax/'+<?php echo $id_game;?>);
 	    	httpRequest.send(null);
 	  	}
 	
