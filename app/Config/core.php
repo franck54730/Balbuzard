@@ -40,6 +40,7 @@
 	
 	
 	Configure::write('NB_SYMBOLE', 57);
+	Configure::write('HOST', 'localhost');
 
 /**
  * Configure the Error handler used to handle errors for your application. By default

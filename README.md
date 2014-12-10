@@ -12,3 +12,7 @@ pour récupere le projet fini via git :
   git clone https://github.com/franck54730/Balbuzard
 puis utiliser la branche "balbuzard_fini"
   git checkout balbuzard_fini
+  
+si vous voulez modifier l'hôte modifier dans app/Config/core.php la ligne 43 et remplacer 'localhost':
+  Configure::write('HOST', 'localhost');
+le changement de cette valeur n'influe pas sur la base de données (par defaut 'localhost')

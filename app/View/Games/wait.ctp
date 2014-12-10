@@ -25,7 +25,7 @@
 	      		return false;
 	    	}
 	    	httpRequest.onreadystatechange = alertContents;
-	    	httpRequest.open('GET', 'http://localhost/index.php/games/getPlayerForGame/'+<?php echo $game['id'];?>);
+	    	httpRequest.open('GET', 'http://'+<?php echo Configure::read('HOST');?>+'/index.php/games/getPlayerForGame/'+<?php echo $game['id'];?>);
 	    	httpRequest.send();
 	  	}
 	
@@ -50,11 +50,11 @@
 					    innerTable += "</tbody>";
 					    table.innerHTML = innerTable;
  	 				}else{	
- 	 	 				window.location.href = 'http://localhost/index.php/games/game/'+<?php echo $game['id'];?>;
+ 	 	 				window.location.href = 'http://'+<?php echo Configure::read('HOST');?>+'/index.php/games/game/'+<?php echo $game['id'];?>;
  	 	 			}
 					
 	      		}else
-	 				window.location.href = 'http://localhost/index.php/games/wait/'+<?php echo $game['id'];?>;
+	 				window.location.href = 'http://'+<?php echo Configure::read('HOST');?>+'/index.php/games/wait/'+<?php echo $game['id'];?>;
 	    	}
 	  	}
 	})();
