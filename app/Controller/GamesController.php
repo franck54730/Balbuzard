@@ -349,17 +349,20 @@ class GamesController extends AppController {
 	public function __createCard($id_game){
             $a = $this->__cards();
             $ordre = 1;
-
+            
+          
             //creation des cartes
             foreach ($a as $c) {
                 //creation d'une carte
                 $this->loadModel('Card');
-                $symbole = 1;
+                $deal =  array(1,2,3,4,5,6,7,8);
+                shuffle($deal);
+                $symbole = 0;
                 //ajout des symboles a la carte
-                foreach ($c as $d) {
-                    $this->Card->set(array("s$symbole" => $d));
-                    $symbole++;
-                }
+                foreach ($c as $d) {                   
+                    $this->Card->set(array("s$deal[$symbole]" => $d));
+                    $symbole++;                  
+          }
                 $id_card = count($this->Card->find('all'));
                 //sauvegarde de la carte               
                 $this->Card->save();
