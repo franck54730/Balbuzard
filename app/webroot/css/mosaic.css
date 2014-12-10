@@ -193,7 +193,7 @@ a:hover {
 .post .entry {
 	margin: 0 33px 0 49px;
 	padding: 20px 20px 0 20px;
-	background: url(images/img11.jpg) no-repeat;
+	/*background: url(images/img11.jpg) no-repeat;*/
 }
 
 .post .entry a:link {
