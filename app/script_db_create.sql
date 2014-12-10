@@ -32,7 +32,9 @@ CREATE TABLE games (
 	nbJoueurMax INT UNSIGNED DEFAULT 4,
 	status INT,
 	id_creator INT UNSIGNED,
-	FOREIGN KEY (id_creator) REFERENCES users(id)
+	id_winner INT UNSIGNED,
+	FOREIGN KEY (id_creator) REFERENCES users(id),
+	FOREIGN KEY (id_winner) REFERENCES users(id)
 );
 
 CREATE TABLE lobbies (     
