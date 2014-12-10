@@ -97,7 +97,7 @@ a:hover {
 /* Page */
 
 #page {
-	width: 980px;
+	width: 890px;
 	margin: 0 auto;
 	
 }
@@ -139,7 +139,8 @@ a:hover {
 	background-image: url(images/img06.jpg) ;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover; 
+	background-size: cover;
+	background-position: left center; 
 }
 
 .post .bgbottom {
@@ -190,7 +191,7 @@ a:hover {
 }
 
 .post .entry {
-	margin: 0 33px 0 149px;
+	margin: 0 33px 0 49px;
 	padding: 20px 20px 0 20px;
 	background: url(images/img11.jpg) no-repeat;
 }
